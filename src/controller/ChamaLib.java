@@ -1,13 +1,17 @@
-package controller;
+package contr;
+
+import controller.Ordena;
 
 public class ChamaLib {
 
 	public void ordenaQuick(int vet[]) {
-		Ordena o = new Ordena();
-		int[] mostra = o.quickSort(vet, 0, vet.length - 1);
-		for (int i = 0; i < mostra.length; i++) {
-			System.out.println(i + 1 + "#  " + mostra[i]);
+		Ordena ord = new Ordena();
+		int result[] = new int[vet.length];
+		ord.quickSort(vet, 0, vet.length - 1);
+		for (int i = 0; i < vet.length; i++) {
+			result[i] = vet[i];
+			System.out.println(i + " # " + result[i]);
 		}
-	}
 
+	}
 }
