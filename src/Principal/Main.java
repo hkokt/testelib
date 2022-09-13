@@ -1,6 +1,6 @@
 package Principal;
 
-import controller.ChamaLib;
+import contr.ChamaLib;
 
 public class Main {
 	public static void main(String[] args) {
